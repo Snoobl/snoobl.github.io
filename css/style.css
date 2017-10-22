@@ -1,0 +1,89 @@
+* {
+	margin:0px; padding:0px;
+}
+html, body {
+	height:100%;
+	max-width:100%;
+	flow-x: hidden;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color:#b9b9b9;
+	background-color:#0f0f0f;
+	display:flex;
+	flex-direction:column;
+}
+.content {
+	flex: 1 0 auto;
+}
+.space-md {
+	padding-top:30px;
+}
+a, a:visited {
+	color:#e0ba48;
+}
+h3 {
+	color:#abded4;
+}
+#logo {
+	float:left;
+	margin:15px;
+}
+.default {
+	color:#dedec5;
+}
+.fanpack {
+	color:#e0ba48;
+}
+.red {
+	color:#bd3535;
+}
+.blue {
+	color:#3d93fc;
+}
+.system {
+	color:#968a06;
+}
+.system-message {
+	color:#abded4;
+}
+.shadow {
+	color:#1e2420;
+}
+#bg {
+	position:absolute;
+	z-index:0;
+	height:260px;
+	width:450px;
+}
+.messages {
+	padding:;
+}
+.chat {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-shadow: 2px 2px #0f0f0f;
+	max-width:430px;
+	padding:40px 0px 40px 40px;
+	max-width:450px;
+	z-index:1337;
+    position:absolute;
+}
+form {
+	background-color:#333;
+	padding:1px 20px 20px 20px;
+}
+input {
+	width:;
+}
+input[type="text"] {
+	padding:5px 10px;
+	background-color:#888;
+	color:#000;
+}
+.chatinput {
+	width:100%;
+}
+#by {
+	text-align:center;
+}

@@ -1,7 +1,69 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Battlerite TrashTalk</title>
+	<meta name="description" content="Create fake Battlerite chat messages">
+	<meta name="author" content="SNooBL">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
+	<script src="js/script.js"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>Git gut</p>
+	<div class="content">
+
+		<img id="logo" src="img/logo.png" height="50">
+		<h1 class="system">Battlerite TrashTalk</h1>
+		<br/>
+		<input type="number" id="numPanes" value="3" min="1" max="8" />
+		<div class="messages" id="messages">
+
+
+
+		</div>
+
+		<div class="col-md-3">
+			<form action="">
+				<h3>Background</h3>
+				<select id="bg-select">
+					<option value="1" selected>Mount Araz 1</option>
+					<option value="2">Mount Araz 2</option>
+					<option value="3">Mount Araz 3</option>
+					<option value="4">Mount Araz 4</option>
+					<option value="5">Mount Araz 5</option>
+				</select>
+			</form>
+		</div>
+		<br/>
+
+		<div class="col-md-12 col-sm-12">
+			<h3>Output</h3>
+			<img id="bg" src="img/bg-1.jpg" />
+			<div class="chat" id="chat">
+
+			</div>
+		</div>
+
+	</div>
+	<!-- END content -->
+	<footer class="footer">
+		<div class="col-md-12 col-sm-12">
+			<div id="by">
+				<p>Made by
+					<a href="https://twitter.com/Snoobl" target="_blank">@snoobl</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
 </body>
+
 </html>
