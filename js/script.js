@@ -58,25 +58,25 @@ function generatePanes(startNum, count) {
         let formPane = `<div class="col-md-3">
 			<form>
 				<h2><i class="fa fa-comment" aria-hidden="true"></i> ${i}</h2>
-				<hr>
 				Name
-				<br/>
+				<br>
 				<input type="text" name="name" id="nameinput${i}" value="">
-				<br/>
+				<br>
+				<br>
 				Team
-				<br/>
+				<br>
 				<input type="radio" name="team" id="team-blue${i}" value="blue" checked>
 				<label for="team-blue${i}" class="blue"> Blue</label>&nbsp;
 				<input type="radio" name="team" id="team-red${i}" value="red">
 				<label for="team-red${i}" class="red"> Red</label>
-				<br/>
+				<br>
 				Chatmode
-				<br/>
+				<br>
 				<input type='radio' name="chatmode1" id='allchat${i}' checked/>
 				<label for="allchat${i}"> ALL</label>&nbsp;
 				<input type='radio' name="chatmode1" id='teamchat${i}' />
 				<label for="teamchat${i}"> TEAM</label>
-				<br/>
+				<br>
 				<input type="checkbox" name="fanpack" id="check-fanpack${i}" value="fanpack">&nbsp;
 				<img class="fanpack" src="img/fanpack.png">
 				<label for="check-fanpack${i}">&nbsp;Ultimate Fanpack</label>
@@ -98,7 +98,7 @@ function generateChatFields(startNum, count) {
                         <span class="blue" id="name${i}">Player${i}</span>
                         <span class="default">: </span>
                         <span class="default" id="chatmessage${i}">im magician...lol</span>
-                        <br/>`;
+                        <br>`;
         chatFields.push(chatField);
     }
     return chatFields;
