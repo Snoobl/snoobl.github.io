@@ -57,20 +57,20 @@ function generatePanes(startNum, count) {
     for (let i = startNum; i <= count; i++) {
         let formPane = `<div class="col-md-3">
 			<form>
-				<h3>Message ${i}</h3>
+				<h2><i class="fa fa-comment" aria-hidden="true"></i> ${i}</h2>
 				<hr>
-				<b>Name</b>
+				Name
 				<br/>
 				<input type="text" name="name" id="nameinput${i}" value="">
 				<br/>
-				<b>Team</b>
+				Team
 				<br/>
 				<input type="radio" name="team" id="team-blue${i}" value="blue" checked>
 				<label for="team-blue${i}" class="blue"> Blue</label>&nbsp;
 				<input type="radio" name="team" id="team-red${i}" value="red">
 				<label for="team-red${i}" class="red"> Red</label>
 				<br/>
-				<b>Chatmode</b>
+				Chatmode
 				<br/>
 				<input type='radio' name="chatmode1" id='allchat${i}' checked/>
 				<label for="allchat${i}"> ALL</label>&nbsp;
@@ -81,7 +81,7 @@ function generatePanes(startNum, count) {
 				<img class="fanpack" src="img/fanpack.png">
 				<label for="check-fanpack${i}">&nbsp;Ultimate Fanpack</label>
 				<br>
-				<b>Message</b>
+				Message
 				<input type="text" name="message" class="chatinput" id="chatinput${i}">
 				<br>
 			</form>

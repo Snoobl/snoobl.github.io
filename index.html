@@ -12,26 +12,21 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://use.fontawesome.com/22bc0b2a73.js"></script>
 	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.png' />
 	<script src="js/script.js"></script>
 </head>
 
 <body>
-	<div class="content">
-
-		<img id="logo" src="img/logo.png" height="50">
-		<h1 class="system">Battlerite TrashTalk</h1>
-		<br/>
-		<input type="number" id="numPanes" value="3" min="1" max="8" />
-		<div class="messages" id="messages">
-
-
-
+	<div class="content container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="intro"><img id="logo" src="img/logo.png" height="50">&nbsp; TrashTalk</h1>
 		</div>
-
+		<br>
 		<div class="col-md-3">
-			<form action="">
-				<h3>Background</h3>
+			<form>
+				<h3><i class="fa fa-map fa-2x" aria-hidden="true"></i></h3>
 				<select id="bg-select">
 					<option value="1" selected>Mount Araz 1</option>
 					<option value="2">Mount Araz 2</option>
@@ -41,8 +36,22 @@
 				</select>
 			</form>
 		</div>
-		<br/>
-
+		<div class="col-md-3">
+			<form>
+				<h3><i class="fa fa-commenting fa-2x" aria-hidden="true"></i></h3>
+				<input type="number" id="numPanes" value="3" min="1" max="8" />
+			</form>
+		</div>
+		<div class="col-md-6">
+			&nbsp;
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="messages" id="messages"></div>
+	</div>
+	<br>
+	<div class="row">
 		<div class="col-md-12 col-sm-12">
 			<h3>Output</h3>
 			<img id="bg" src="img/bg-1.jpg" />
@@ -50,7 +59,7 @@
 
 			</div>
 		</div>
-
+	</div>
 	</div>
 	<!-- END content -->
 	<footer class="footer">
