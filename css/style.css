@@ -10,11 +10,12 @@ html, body {
 body {
 	font-family: 'Open Sans', sans-serif;
 	color:#9bb2c7; /*#b9b9b9*/
-	background-color:#0f0f0f;
+	background-color:#08010d;
 	display:flex;
 	flex-direction:column;
 	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
+	background-size: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
@@ -27,6 +28,12 @@ h2 {
 h3 {
 	color:#e0ba48;
 	text-shadow: 3px 3px #000;
+}
+::selection {
+  background: #0d0a0c; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #0d0a0c; /* Gecko Browsers */
 }
 .content {
 	flex: 1 0 auto;
@@ -78,9 +85,6 @@ a, a:visited {
 	border-top:2px solid black;
 	border-bottom:2px solid black;
 	padding:5px 10px;
-  	-webkit-transform: skew(-15deg);
-	-moz-transform: skew(-15deg);
-	-o-transform: skew(-15deg);
 }
 .chat {
 	font-family: 'Ubuntu', sans-serif;
@@ -107,9 +111,6 @@ form {
 	border:0px;
 	border-top:2px solid black;
 	border-bottom:2px solid black;
-	-webkit-transform: skew(-15deg);
-	-moz-transform: skew(-15deg);
-	-o-transform: skew(-15deg);
 }
 input[type="text"] {
 	padding:5px 10px;
@@ -119,9 +120,6 @@ input[type="text"] {
 	border-top:2px solid black;
 	border-bottom:2px solid black;
 	text-align:center;
-	-webkit-transform: skew(-15deg);
-	-moz-transform: skew(-15deg);
-	-o-transform: skew(-15deg);
 }
 .chatinput {
 	width:116%;
