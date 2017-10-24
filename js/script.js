@@ -121,7 +121,7 @@ function generateChatFields(startNum, count) {
     for (let i = startNum; i <= count; i++) {
         let chatField = `<span class="default" id="chatmode${i}">[ALL] </span>
                         <span class="blue" id="name${i}">Player${i}</span>
-                        <span class="default">: </span>
+                        <span class="default colon">: </span>
                         <span class="default" id="chatmessage${i}">im magician...lol</span>
                         <br>`;
         chatFields.push(chatField);
